@@ -5,7 +5,7 @@
       <div class="turn-page-left-clip"
            :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
         <div class="turn-page-left-content"
-             :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[1]))">
+             :style="(Object.assign({}, {width: width+suffix, height: height+suffix}, styles[1]))">
           <div class="turn-page-left-inner">
             <div class="manual-item">
               <div class="page-count">{{index + 1}} / {{length}}</div>
@@ -29,7 +29,7 @@
       <div class="turn-page-right-clip"
            :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[2]))">
         <div class="turn-page-right-content"
-             :style="(Object.assign({}, {width: width+'px', height: height+'px'}, styles[0]))">
+             :style="(Object.assign({}, {width: width+suffix, height: height+suffix}, styles[0]))">
           <div class="manual-item">
             <div class="page-count">{{index + 1}} / {{length}}</div>
             <div class="manual-page">
