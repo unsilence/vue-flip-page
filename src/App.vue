@@ -1,12 +1,12 @@
 <template>
-  <div class="turn" ref="turn" :style="{width: width+'px', height: height+'px'}">
+  <div class="turn" ref="turn" :style="{width: width+suffix, height: height+suffix}">
     <template v-for="(item,index) in data">
-      <turn-page  v-if="index == backPage || index == turnPage" :index="index" :width="width" :item="item" :height="height" :length="data.length"
+      <turn-page  v-if="index == backPage || index == turnPage" :index="index" :width="width" :item="item" :height="height" :length="data.length" :suffix="suffix"
                   :active="index == turnPage && turnActive" :styles="index === turnPage ? styles : defaultStyles">
       </turn-page>
     </template>
 
-    <div class="turn-right-border" :style="{width: (((Math.min(data.length, 10) / data.length * (data.length - backPage))) + 'px')}"></div>
+    <div class="turn-right-border" :style="{width: (((Math.min(data.length, 10) / data.length * (data.length - backPage))) +suffix)}"></div>
   </div>
 </template>
 
