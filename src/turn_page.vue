@@ -3,7 +3,7 @@
        :style="{width: width+suffix, height: height+suffix, overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
     <div class="turn-page-left" :style="{left: '-'+width+suffix}">
       <div class="turn-page-left-clip"
-           :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
+           :style="(Object.assign({}, {width: clipSize+suffix, height: clipSize+suffix}, styles[3]))">
         <div class="turn-page-left-content"
              :style="(Object.assign({}, {width: width+suffix, height: height+suffix}, styles[1]))">
           <div class="turn-page-left-inner">
@@ -27,7 +27,7 @@
            :style="(Object.assign({}, {top: ('-' + (height / 2)+suffix), height: (height* 2)+suffix}, styles[5]))"></div>
 
       <div class="turn-page-right-clip"
-           :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[2]))">
+           :style="(Object.assign({}, {width: clipSize+suffix, height: clipSize+suffix}, styles[2]))">
         <div class="turn-page-right-content"
              :style="(Object.assign({}, {width: width+suffix, height: height+suffix}, styles[0]))">
           <div class="manual-item">
