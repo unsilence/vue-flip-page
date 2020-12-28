@@ -1,6 +1,6 @@
 <template>
   <div class="turn-wraper"
-       :style="{width: width+'px', height: height+suffix, overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
+       :style="{width: width+suffix, height: height+suffix, overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
     <div class="turn-page-left" :style="{left: '-'+width+suffix}">
       <div class="turn-page-left-clip"
            :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
