@@ -420,6 +420,10 @@ export default {
 		height: {
 			type: Number,
 			default: 0
+		},
+		suffix:{
+			type:String,
+			default :'px'
 		}
 	},
 	data() {
