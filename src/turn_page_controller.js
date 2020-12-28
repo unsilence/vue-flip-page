@@ -24,7 +24,7 @@ export default {
 		},
 		suffix: {
 			type: String,
-			default: 'px'
+			default: 'rem'
 		},
 
 	},
