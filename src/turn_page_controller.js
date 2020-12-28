@@ -21,7 +21,12 @@ export default {
 		styles: {
 			type: Array,
 			default: () => [{}, {}, {}, {}, {}, {}]
-		}
+		},
+		suffix: {
+			type: String,
+			default: 'px'
+		},
+
 	},
 	data() {
 		return {};

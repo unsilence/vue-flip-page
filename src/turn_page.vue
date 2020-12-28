@@ -1,7 +1,7 @@
 <template>
   <div class="turn-wraper"
-       :style="{width: width+'px', height: height+'px', overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
-    <div class="turn-page-left" :style="{left: '-'+width+'px'}">
+       :style="{width: width+'px', height: height+suffix, overflow: active ? 'visible' : 'hidden', zIndex: length - index}">
+    <div class="turn-page-left" :style="{left: '-'+width+suffix}">
       <div class="turn-page-left-clip"
            :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[3]))">
         <div class="turn-page-left-content"
@@ -18,13 +18,13 @@
             </div>
           </div>
           <div class="turn-page-left-gradient"
-               :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[4]))"></div>
+               :style="(Object.assign({}, {top: ('-' + (height / 2)+suffix), height: (height* 2)+suffix}, styles[4]))"></div>
         </div>
       </div>
     </div>
-    <div class="turn-page-right" :style="{width: width+'px', height: height+'px'}">
+    <div class="turn-page-right" :style="{width: width+suffix, height: height+suffix}">
       <div class="turn-page-right-gradient"
-           :style="(Object.assign({}, {top: ('-' + (height / 2)+'px'), height: (height* 2)+'px'}, styles[5]))"></div>
+           :style="(Object.assign({}, {top: ('-' + (height / 2)+suffix), height: (height* 2)+suffix}, styles[5]))"></div>
 
       <div class="turn-page-right-clip"
            :style="(Object.assign({}, {width: clipSize+'px', height: clipSize+'px'}, styles[2]))">
